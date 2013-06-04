@@ -16,11 +16,15 @@
 }
 
 + (NSArray *)validSuits {
-	return @[@"♥", @"♦", @"♠", @"♣"];
+	static NSArray *validSuits = nil;
+	if (!validSuits) validSuits = @[@"♥", @"♦", @"♠", @"♣"];
+	return validSuits;
 }
 
 + (NSArray *)rankStrings {
-	return @[@"?", @"A", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"J", @"Q", @"K"];
+	static NSArray *rankStrings = nil;
+	if (!rankStrings) rankStrings = @[@"?", @"A", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"J", @"Q", @"K"];
+	return rankStrings;
 }
 
 + (NSUInteger)maxRank {
