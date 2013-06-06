@@ -48,12 +48,21 @@
 						otherCard.unplayable = YES;
 						card.unplayable = YES;
 						self.score += matchScore * MATCH_BONUS;
+						self.results = [NSString stringWithFormat:@"Matched %@ and %@ for %d points",
+											card.contents,
+											otherCard.contents,
+											MATCH_BONUS];
 					} else {
 						otherCard.faceUp = NO;
 						self.score -= MISMATCH_PENALTY;
+						self.results = [NSString stringWithFormat:@"%@ and %@ don't match, %d point penalty",
+										card.contents,
+										otherCard.contents,
+										MISMATCH_PENALTY];
 					}
 					break;
 				}
+				self.results = [NSString stringWithFormat:@"Flipped up %@", card.contents];
 			}
 			self.score -= FLIP_COST;
 		}
