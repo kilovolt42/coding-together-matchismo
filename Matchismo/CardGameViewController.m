@@ -57,4 +57,11 @@
 	[self updateUI];
 }
 
+- (IBAction)deal {
+	self.game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
+												  usingDeck:[[PlayingCardDeck alloc] init]];
+	self.flipCount = 0;
+	[self updateUI];
+}
+
 @end
