@@ -38,13 +38,13 @@
 
 - (void)flipCardAtIndex:(NSUInteger)index {
 	Card *card = [self cardAtIndex:index];
+	Card *secondCard = nil;
+	int matchScore = 0;
 	
 	if (!card.isUnplayable) {
 		if (!card.isFaceUp) {
 			for (Card *otherCard in self.cards) {
 				if (otherCard.isFaceUp && !otherCard.isUnplayable) {
-					Card *secondCard = nil;
-					int matchScore = 0;
 					if (self.isThreeCardMode && !secondCard) {
 						secondCard = otherCard;
 						continue;
