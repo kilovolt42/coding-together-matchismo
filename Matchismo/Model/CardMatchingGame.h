@@ -13,6 +13,7 @@
 
 @property (nonatomic, readonly) int score;
 @property (nonatomic, strong) NSString *results;
+@property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
 
 - (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck; // designated initializer
 - (void)flipCardAtIndex:(NSUInteger)index;

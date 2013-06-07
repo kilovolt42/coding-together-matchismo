@@ -43,22 +43,49 @@
 		if (!card.isFaceUp) {
 			for (Card *otherCard in self.cards) {
 				if (otherCard.isFaceUp && !otherCard.isUnplayable) {
-					int matchScore = [card match:@[otherCard]];
+					Card *secondCard = nil;
+					int matchScore = 0;
+					if (self.isThreeCardMode && !secondCard) {
+						secondCard = otherCard;
+						continue;
+					} else if (self.isThreeCardMode) {
+						matchScore = [card match:@[secondCard, otherCard]];
+					} else {
+						matchScore = [card match:@[otherCard]];
+					}
 					if (matchScore) {
 						otherCard.unplayable = YES;
+						secondCard.unplayable = YES;
 						card.unplayable = YES;
 						self.score += matchScore * MATCH_BONUS;
-						self.results = [NSString stringWithFormat:@"Matched %@ and %@ for %d points",
+						if (self.isThreeCardMode) {
+							self.results = [NSString stringWithFormat:@"Matched %@, %@ and %@ for %d points",
+											card.contents,
+											secondCard.contents,
+											otherCard.contents,
+											matchScore * MATCH_BONUS];
+						} else {
+							self.results = [NSString stringWithFormat:@"Matched %@ and %@ for %d points",
 											card.contents,
 											otherCard.contents,
-											MATCH_BONUS];
+											matchScore * MATCH_BONUS];
+						}
 					} else {
 						otherCard.faceUp = NO;
+						secondCard.faceUp = NO;
 						self.score -= MISMATCH_PENALTY;
-						self.results = [NSString stringWithFormat:@"%@ and %@ don't match, %d point penalty",
-										card.contents,
-										otherCard.contents,
-										MISMATCH_PENALTY];
+						if (self.isThreeCardMode) {
+							self.results = [NSString stringWithFormat:@"%@, %@ and %@ don't match, %d point penalty",
+											card.contents,
+											secondCard.contents,
+											otherCard.contents,
+											MISMATCH_PENALTY];
+						} else {
+							self.results = [NSString stringWithFormat:@"%@ and %@ don't match, %d point penalty",
+											card.contents,
+											otherCard.contents,
+											MISMATCH_PENALTY];
+						}
 					}
 					break;
 				}

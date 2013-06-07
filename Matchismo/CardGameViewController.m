@@ -17,6 +17,7 @@
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *cardModeSegmentedControl;
 @end
 
 @implementation CardGameViewController
@@ -49,6 +50,12 @@
 	}
 	self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
 	self.resultsLabel.text = self.game.results;
+	
+	if (self.cardModeSegmentedControl.selectedSegmentIndex == 0) {
+		self.game.threeCardMode = NO;
+	} else {
+		self.game.threeCardMode = YES;
+	}
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
@@ -62,6 +69,14 @@
 												  usingDeck:[[PlayingCardDeck alloc] init]];
 	self.flipCount = 0;
 	[self updateUI];
+}
+
+- (IBAction)changeCardMode:(UISegmentedControl *)sender {
+	if (sender.selectedSegmentIndex == 0) {
+		self.game.threeCardMode = NO;
+	} else {
+		self.game.threeCardMode = YES;
+	}
 }
 
 @end
