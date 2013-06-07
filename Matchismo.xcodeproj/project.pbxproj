@@ -23,6 +23,7 @@
 		2756CE84175E8AD000ACB5AE /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2756CE83175E8AD000ACB5AE /* PlayingCard.m */; };
 		2756CE87175E924A00ACB5AE /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2756CE86175E924A00ACB5AE /* PlayingCardDeck.m */; };
 		2756CE8B17601A0800ACB5AE /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2756CE8A17601A0800ACB5AE /* CardMatchingGame.m */; };
+		2769BD6E17617176008F47C2 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 2769BD6D17617176008F47C2 /* card.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		2756CE86175E924A00ACB5AE /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		2756CE8917601A0800ACB5AE /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		2756CE8A17601A0800ACB5AE /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		2769BD6D17617176008F47C2 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				2756CE71175E841200ACB5AE /* MainStoryboard.storyboard */,
 				2756CE74175E841200ACB5AE /* CardGameViewController.h */,
 				2756CE75175E841200ACB5AE /* CardGameViewController.m */,
+				2769BD6F17617217008F47C2 /* Assets */,
 				2756CE88175EA04900ACB5AE /* Model */,
 				2756CE60175E841200ACB5AE /* Supporting Files */,
 			);
@@ -138,6 +141,14 @@
 				2756CE8A17601A0800ACB5AE /* CardMatchingGame.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2769BD6F17617217008F47C2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2769BD6D17617176008F47C2 /* card.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				2756CE6E175E841200ACB5AE /* Default@2x.png in Resources */,
 				2756CE70175E841200ACB5AE /* Default-568h@2x.png in Resources */,
 				2756CE73175E841200ACB5AE /* MainStoryboard.storyboard in Resources */,
+				2769BD6E17617176008F47C2 /* card.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
