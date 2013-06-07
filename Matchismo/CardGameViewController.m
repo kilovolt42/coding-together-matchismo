@@ -61,6 +61,7 @@
 - (IBAction)flipCard:(UIButton *)sender {
 	[self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
 	self.flipCount++;
+	self.cardModeSegmentedControl.enabled = NO;
 	[self updateUI];
 }
 
@@ -68,6 +69,7 @@
 	self.game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
 												  usingDeck:[[PlayingCardDeck alloc] init]];
 	self.flipCount = 0;
+	self.cardModeSegmentedControl.enabled = YES;
 	[self updateUI];
 }
 
