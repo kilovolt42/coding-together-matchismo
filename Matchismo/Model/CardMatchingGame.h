@@ -12,7 +12,7 @@
 @interface CardMatchingGame : NSObject
 
 @property (nonatomic, readonly) int score;
-@property (nonatomic, strong) NSString *results;
+@property (nonatomic, strong) NSMutableArray *history;
 @property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
 
 - (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck; // designated initializer

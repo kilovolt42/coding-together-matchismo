@@ -27,6 +27,8 @@
 				self.cards[i] = card;
 			}
 		}
+		self.history = [NSMutableArray arrayWithArray:@[@""]];
+		NSLog(@"History count! %d", [self.history count]);
 	}
 	
 	return self;
@@ -43,6 +45,7 @@
 	
 	if (!card.isUnplayable) {
 		if (!card.isFaceUp) {
+			[self.history addObject:[NSString stringWithFormat:@"Flipped up %@", card.contents]];
 			for (Card *otherCard in self.cards) {
 				if (otherCard.isFaceUp && !otherCard.isUnplayable) {
 					if (self.isThreeCardMode && !secondCard) {
@@ -59,37 +62,36 @@
 						card.unplayable = YES;
 						self.score += matchScore * MATCH_BONUS;
 						if (self.isThreeCardMode) {
-							self.results = [NSString stringWithFormat:@"Matched %@, %@ and %@ for %d points",
-											card.contents,
-											secondCard.contents,
-											otherCard.contents,
-											matchScore * MATCH_BONUS];
+							[self.history addObject:[NSString stringWithFormat:@"Matched %@, %@ and %@ for %d points",
+													 card.contents,
+													 secondCard.contents,
+													 otherCard.contents,
+													 matchScore * MATCH_BONUS]];
 						} else {
-							self.results = [NSString stringWithFormat:@"Matched %@ and %@ for %d points",
-											card.contents,
-											otherCard.contents,
-											matchScore * MATCH_BONUS];
+							[self.history addObject:[NSString stringWithFormat:@"Matched %@ and %@ for %d points",
+													 card.contents,
+													 otherCard.contents,
+													 matchScore * MATCH_BONUS]];
 						}
 					} else {
 						otherCard.faceUp = NO;
 						secondCard.faceUp = NO;
 						self.score -= MISMATCH_PENALTY;
 						if (self.isThreeCardMode) {
-							self.results = [NSString stringWithFormat:@"%@, %@ and %@ don't match, %d point penalty",
-											card.contents,
-											secondCard.contents,
-											otherCard.contents,
-											MISMATCH_PENALTY];
+							[self.history addObject:[NSString stringWithFormat:@"%@, %@ and %@ don't match, %d point penalty",
+													 card.contents,
+													 secondCard.contents,
+													 otherCard.contents,
+													 MISMATCH_PENALTY]];
 						} else {
-							self.results = [NSString stringWithFormat:@"%@ and %@ don't match, %d point penalty",
-											card.contents,
-											otherCard.contents,
-											MISMATCH_PENALTY];
+							[self.history addObject:[NSString stringWithFormat:@"%@ and %@ don't match, %d point penalty",
+													 card.contents,
+													 otherCard.contents,
+													 MISMATCH_PENALTY]];
 						}
 					}
 					break;
 				}
-				self.results = [NSString stringWithFormat:@"Flipped up %@", card.contents];
 			}
 			self.score -= FLIP_COST;
 		}

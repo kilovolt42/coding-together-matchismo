@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *cardModeSegmentedControl;
+@property (weak, nonatomic) IBOutlet UISlider *historySlider;
 @end
 
 @implementation CardGameViewController
@@ -56,13 +57,16 @@
 		[cardButton setImageEdgeInsets:UIEdgeInsetsMake(6, 6, 7, 6)];
 	}
 	self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
-	self.resultsLabel.text = self.game.results;
+	self.resultsLabel.text = [self.game.history lastObject];
 	
 	if (self.cardModeSegmentedControl.selectedSegmentIndex == 0) {
 		self.game.threeCardMode = NO;
 	} else {
 		self.game.threeCardMode = YES;
 	}
+	
+	self.historySlider.maximumValue = [self.game.history count] - 1;
+	self.resultsLabel.alpha = 1.0;
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
@@ -70,6 +74,11 @@
 	self.flipCount++;
 	self.cardModeSegmentedControl.enabled = NO;
 	[self updateUI];
+	NSLog(@"History count: %d", [self.game.history count]);
+	for (NSString *string in self.game.history) {
+		NSLog(@"%@", string);
+	}
+	[self.historySlider setValue:self.historySlider.maximumValue animated:NO];
 }
 
 - (IBAction)deal {
@@ -85,6 +94,15 @@
 		self.game.threeCardMode = NO;
 	} else {
 		self.game.threeCardMode = YES;
+	}
+}
+
+- (IBAction)browseHistory:(UISlider *)sender {
+	self.resultsLabel.text = [self.game.history objectAtIndex:round(sender.value)];
+	if (round(sender.value) == sender.maximumValue) {
+		self.resultsLabel.alpha = 1.0;
+	} else {
+		self.resultsLabel.alpha = 0.6;
 	}
 }
 
