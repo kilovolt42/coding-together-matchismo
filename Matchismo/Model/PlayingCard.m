@@ -24,13 +24,17 @@
 			}
 		}
 	} else if ([otherCards count] == 2) {
-		PlayingCard *firstCard = otherCards[0];
-		PlayingCard *secondCard = otherCards[1];
-		if ([firstCard.suit isEqualToString:self.suit] &&
-			[secondCard.suit isEqualToString:self.suit]) {
-			score = 3;
-		} else if (firstCard.rank == self.rank && secondCard.rank == self.rank) {
-			score = 6;
+		id firstCard = otherCards[0];
+		id secondCard = otherCards[1];
+		if ([firstCard isKindOfClass:[PlayingCard class]] && [secondCard isKindOfClass:[PlayingCard class]]) {
+			PlayingCard *firstPlayingCard = (PlayingCard *)firstCard;
+			PlayingCard *secondPlayingCard = (PlayingCard *)secondCard;
+			if ([firstPlayingCard.suit isEqualToString:self.suit] &&
+				[secondPlayingCard.suit isEqualToString:self.suit]) {
+				score = 3;
+			} else if (firstPlayingCard.rank == self.rank && secondPlayingCard.rank == self.rank) {
+				score = 6;
+			}
 		}
 	}
 	
