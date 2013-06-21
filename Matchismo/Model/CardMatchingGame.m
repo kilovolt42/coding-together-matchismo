@@ -28,7 +28,6 @@
 			}
 		}
 		self.history = [NSMutableArray arrayWithArray:@[@""]];
-		NSLog(@"History count! %d", [self.history count]);
 	}
 	
 	return self;

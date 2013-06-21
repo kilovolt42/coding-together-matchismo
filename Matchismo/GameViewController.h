@@ -1,5 +1,5 @@
 //
-//  SetGameViewController.h
+//  GameViewController.h
 //  Matchismo
 //
 //  Created by Kyle Stevens on 6/19/13.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GameViewController.h"
 
-@interface SetGameViewController : GameViewController
+@interface GameViewController : UIViewController
 
 @end

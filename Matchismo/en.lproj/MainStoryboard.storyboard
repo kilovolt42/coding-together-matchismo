@@ -29,10 +29,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="CvQ-cA-8BX"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="NY1-Cf-l3C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dUg-Zl-S5a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jq-fV-e8O">
                                 <rect key="frame" x="92" y="20" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -49,10 +49,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="kp6-xi-6yy"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="ZxW-Dj-a5O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T29-WB-b7d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iSQ-4e-2Uw">
                                 <rect key="frame" x="164" y="20" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -69,10 +69,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="VaU-bj-9Xe"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="vSK-ye-7sd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mt4-HQ-Ghy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PSR-4G-u5U">
                                 <rect key="frame" x="236" y="20" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -89,10 +89,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Hb3-Sl-DEA"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="bAS-iF-A55"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oys-mV-rb1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Alw-Q3-6c6">
                                 <rect key="frame" x="20" y="91" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -109,10 +109,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="LTy-gC-RzT"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="7vI-OP-fDg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xZ2-w4-DF8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VbM-Dh-kEo">
                                 <rect key="frame" x="92" y="91" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -129,10 +129,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Voi-97-wzY"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="qPQ-QR-r0e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jsv-vO-ZYc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Oq-T8-Lih">
                                 <rect key="frame" x="164" y="91" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -149,10 +149,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="FQN-zx-2X4"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="ET8-Eb-m8R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I39-1E-R38">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ivw-FP-U9o">
                                 <rect key="frame" x="236" y="91" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -169,10 +169,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="v0u-dB-udy"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="1jw-Bi-jNK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ry6-FN-8aE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x24-Tr-nUZ">
                                 <rect key="frame" x="20" y="162" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -189,10 +189,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="ITL-oi-6ET"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="AP7-Tg-0Ve"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RHt-jy-EVG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aiF-Ei-CuC">
                                 <rect key="frame" x="92" y="162" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -209,10 +209,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="L4N-Xv-f7r"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="5LL-N4-bdb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mpg-pa-SEs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Grs-KG-rKb">
                                 <rect key="frame" x="164" y="162" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -229,10 +229,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="T5h-bN-0r1"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Phn-vm-wIi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O45-mq-O8I">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Sr-N7-fGs">
                                 <rect key="frame" x="236" y="162" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -249,10 +249,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="2OX-8N-GGQ"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Gck-yc-eGq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T0h-gO-cL6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pbd-nz-i0f">
                                 <rect key="frame" x="20" y="233" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -269,10 +269,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Izi-vk-Ceh"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Q2f-b7-Qe4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aQb-YM-cie">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yl3-IX-ksl">
                                 <rect key="frame" x="92" y="233" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -289,10 +289,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="xcf-gI-OMy"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="vnF-0k-fIe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="deU-el-zn9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cq3-O9-aOP">
                                 <rect key="frame" x="164" y="233" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -309,10 +309,10 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="yvQ-Oy-2jG"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="3eW-Or-IB2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JF2-wh-3wb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZCv-Sx-9Mp">
                                 <rect key="frame" x="236" y="233" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -329,7 +329,7 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="7ns-gi-BvJ"/>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="uaC-SA-oMd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B7N-AZ-hiC">
@@ -365,14 +365,14 @@ QRTimaM
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="deal" destination="2" eventType="touchUpInside" id="fLi-Ij-ZqF"/>
+                                    <action selector="deal" destination="2" eventType="touchUpInside" id="heX-Ox-aKb"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" id="hvy-Sm-WqH">
                                 <rect key="frame" x="18" y="341" width="284" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="browseHistory:" destination="2" eventType="valueChanged" id="WsZ-b1-R3W"/>
+                                    <action selector="browseHistory:" destination="2" eventType="valueChanged" id="fl1-t8-wyd"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -380,26 +380,26 @@ QRTimaM
                     </view>
                     <tabBarItem key="tabBarItem" title="Card Game" image="cardgame.png" id="2SD-z7-g4q"/>
                     <connections>
-                        <outlet property="flipsLabel" destination="B7N-AZ-hiC" id="fSl-Hm-xa8"/>
-                        <outlet property="historySlider" destination="hvy-Sm-WqH" id="Xf2-6P-9GY"/>
-                        <outlet property="resultsLabel" destination="FQa-Qh-3B4" id="l1l-6w-Bn2"/>
-                        <outlet property="scoreLabel" destination="fZS-Lb-UIt" id="tIF-No-ElR"/>
-                        <outletCollection property="cardButtons" destination="l97-vk-0z4" id="qIi-Sy-rbX"/>
-                        <outletCollection property="cardButtons" destination="dUg-Zl-S5a" id="eud-Mv-MK6"/>
-                        <outletCollection property="cardButtons" destination="T29-WB-b7d" id="9Hc-uc-yEE"/>
-                        <outletCollection property="cardButtons" destination="mt4-HQ-Ghy" id="udW-Cj-0Gw"/>
-                        <outletCollection property="cardButtons" destination="oys-mV-rb1" id="SdV-wU-ohE"/>
-                        <outletCollection property="cardButtons" destination="xZ2-w4-DF8" id="Hsz-GO-0fc"/>
-                        <outletCollection property="cardButtons" destination="Jsv-vO-ZYc" id="YcE-fP-uTp"/>
-                        <outletCollection property="cardButtons" destination="I39-1E-R38" id="AU5-Fa-HwQ"/>
-                        <outletCollection property="cardButtons" destination="Ry6-FN-8aE" id="WPs-Jc-bFZ"/>
-                        <outletCollection property="cardButtons" destination="RHt-jy-EVG" id="kH4-DT-Qht"/>
-                        <outletCollection property="cardButtons" destination="mpg-pa-SEs" id="ALh-WZ-XRj"/>
-                        <outletCollection property="cardButtons" destination="O45-mq-O8I" id="0Bh-hv-Py7"/>
-                        <outletCollection property="cardButtons" destination="T0h-gO-cL6" id="wXO-O7-mGJ"/>
-                        <outletCollection property="cardButtons" destination="aQb-YM-cie" id="ezr-Jr-WsT"/>
-                        <outletCollection property="cardButtons" destination="deU-el-zn9" id="EIG-iK-K99"/>
-                        <outletCollection property="cardButtons" destination="JF2-wh-3wb" id="ziL-zF-lFR"/>
+                        <outlet property="flipsLabel" destination="B7N-AZ-hiC" id="fw4-kj-Dok"/>
+                        <outlet property="historySlider" destination="hvy-Sm-WqH" id="GJG-BL-RtQ"/>
+                        <outlet property="resultsLabel" destination="FQa-Qh-3B4" id="e50-yI-ETU"/>
+                        <outlet property="scoreLabel" destination="fZS-Lb-UIt" id="Y33-k8-CYW"/>
+                        <outletCollection property="cardButtons" destination="l97-vk-0z4" id="TTD-4W-HCN"/>
+                        <outletCollection property="cardButtons" destination="4Jq-fV-e8O" id="y63-kv-yvJ"/>
+                        <outletCollection property="cardButtons" destination="iSQ-4e-2Uw" id="gk0-1s-eVd"/>
+                        <outletCollection property="cardButtons" destination="PSR-4G-u5U" id="VER-je-W8Z"/>
+                        <outletCollection property="cardButtons" destination="Alw-Q3-6c6" id="yfD-Lg-uMk"/>
+                        <outletCollection property="cardButtons" destination="VbM-Dh-kEo" id="fYe-OP-U5k"/>
+                        <outletCollection property="cardButtons" destination="0Oq-T8-Lih" id="xe4-5q-aXL"/>
+                        <outletCollection property="cardButtons" destination="ivw-FP-U9o" id="aEH-jA-wg7"/>
+                        <outletCollection property="cardButtons" destination="x24-Tr-nUZ" id="wMB-m9-J0q"/>
+                        <outletCollection property="cardButtons" destination="aiF-Ei-CuC" id="c7N-M7-pDL"/>
+                        <outletCollection property="cardButtons" destination="Grs-KG-rKb" id="zwQ-7h-aNf"/>
+                        <outletCollection property="cardButtons" destination="1Sr-N7-fGs" id="gSM-hp-py6"/>
+                        <outletCollection property="cardButtons" destination="Pbd-nz-i0f" id="dOE-bY-p9B"/>
+                        <outletCollection property="cardButtons" destination="yl3-IX-ksl" id="mjT-GG-ktq"/>
+                        <outletCollection property="cardButtons" destination="Cq3-O9-aOP" id="xTH-hh-baR"/>
+                        <outletCollection property="cardButtons" destination="ZCv-Sx-9Mp" id="sec-qw-QVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -413,9 +413,564 @@ QRTimaM
                     <view key="view" contentMode="scaleToFill" id="htV-9a-m3P">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3er-bp-Lf6">
+                                <rect key="frame" x="20" y="20" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="7K0-ud-Sf2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CF4-LJ-aqq">
+                                <rect key="frame" x="20" y="304" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deal" destination="uvA-Ar-Klr" eventType="touchUpInside" id="kVV-Ot-yK1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W54-HL-J7o">
+                                <rect key="frame" x="92" y="308" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ijJ-HG-zLg">
+                                <rect key="frame" x="200" y="308" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="qtA-Kh-FCa">
+                                <rect key="frame" x="20" y="370" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" id="fs6-LF-UtT">
+                                <rect key="frame" x="18" y="341" width="284" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="browseHistory:" destination="uvA-Ar-Klr" eventType="valueChanged" id="OqL-Rp-Aa9"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M2l-pu-0IZ">
+                                <rect key="frame" x="68" y="20" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="zQF-GZ-VTu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j0S-dI-v5c">
+                                <rect key="frame" x="116" y="20" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="1iO-4W-LaT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gor-mT-xqm">
+                                <rect key="frame" x="164" y="20" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="sQt-CF-M4o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bGe-1G-bWy">
+                                <rect key="frame" x="212" y="20" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="imH-uA-xku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cuz-dw-vW5">
+                                <rect key="frame" x="260" y="20" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="xTp-Ta-KJC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mwh-fn-igP">
+                                <rect key="frame" x="20" y="91" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="QOu-66-KgL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wIY-Ro-rKC">
+                                <rect key="frame" x="68" y="91" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="TfX-hn-iks"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mbt-2f-t8C">
+                                <rect key="frame" x="116" y="91" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="haL-Dg-zJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bax-G2-exY">
+                                <rect key="frame" x="164" y="91" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="NE5-Uf-yvm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pny-fk-Ntb">
+                                <rect key="frame" x="212" y="91" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="wsP-p3-1yL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dRJ-4N-UgR">
+                                <rect key="frame" x="260" y="91" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="NEg-uG-X5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eNd-y8-m3R">
+                                <rect key="frame" x="20" y="162" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="mrw-Ra-od1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x7l-cR-sIc">
+                                <rect key="frame" x="68" y="162" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="X8f-6o-T0m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EUc-s3-mHd">
+                                <rect key="frame" x="116" y="162" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="3W4-8d-cL9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WYT-yG-ZO4">
+                                <rect key="frame" x="164" y="162" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="9X8-5f-KF4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GgJ-Cs-d9I">
+                                <rect key="frame" x="212" y="162" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="gOp-7J-sGs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IY3-k9-kxX">
+                                <rect key="frame" x="260" y="162" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="TN1-m2-TMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cUR-al-gdG">
+                                <rect key="frame" x="20" y="233" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="O13-rq-mxE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ngs-YI-2JE">
+                                <rect key="frame" x="68" y="233" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="P3Q-k1-nrl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6a0-em-ESZ">
+                                <rect key="frame" x="116" y="233" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="7a2-g4-h9n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RD7-RE-gSN">
+                                <rect key="frame" x="164" y="233" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="hGW-Ts-F1X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2qJ-na-m8b">
+                                <rect key="frame" x="212" y="233" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="g9D-c4-iIv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N0D-W9-8f9">
+                                <rect key="frame" x="260" y="233" width="40" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <string key="title" base64-UTF8="YES">
+QRTimaM
+</string>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="uvA-Ar-Klr" eventType="touchUpInside" id="ZNc-xF-Sz9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Game" image="setgame.png" id="3bo-bT-kzo"/>
+                    <connections>
+                        <outlet property="flipsLabel" destination="W54-HL-J7o" id="ijX-Zp-dgw"/>
+                        <outlet property="historySlider" destination="fs6-LF-UtT" id="Bvv-8p-7Tg"/>
+                        <outlet property="resultsLabel" destination="qtA-Kh-FCa" id="EVz-JQ-f6U"/>
+                        <outlet property="scoreLabel" destination="ijJ-HG-zLg" id="0WM-uP-WQh"/>
+                        <outletCollection property="cardButtons" destination="3er-bp-Lf6" id="Kob-K4-Nit"/>
+                        <outletCollection property="cardButtons" destination="M2l-pu-0IZ" id="I9e-Fo-c6W"/>
+                        <outletCollection property="cardButtons" destination="j0S-dI-v5c" id="qJ2-Il-11O"/>
+                        <outletCollection property="cardButtons" destination="Gor-mT-xqm" id="1ld-2u-sDT"/>
+                        <outletCollection property="cardButtons" destination="bGe-1G-bWy" id="yOe-ln-YOg"/>
+                        <outletCollection property="cardButtons" destination="cuz-dw-vW5" id="0pk-Qc-Niw"/>
+                        <outletCollection property="cardButtons" destination="mwh-fn-igP" id="OwT-zf-gps"/>
+                        <outletCollection property="cardButtons" destination="wIY-Ro-rKC" id="9Qu-MG-ZX0"/>
+                        <outletCollection property="cardButtons" destination="Mbt-2f-t8C" id="1wF-rs-Rn0"/>
+                        <outletCollection property="cardButtons" destination="bax-G2-exY" id="f2S-Q7-Nqh"/>
+                        <outletCollection property="cardButtons" destination="pny-fk-Ntb" id="bWv-sa-Zlp"/>
+                        <outletCollection property="cardButtons" destination="dRJ-4N-UgR" id="gVB-WJ-SuF"/>
+                        <outletCollection property="cardButtons" destination="eNd-y8-m3R" id="LQ9-u9-cBp"/>
+                        <outletCollection property="cardButtons" destination="x7l-cR-sIc" id="2Qy-fb-T2F"/>
+                        <outletCollection property="cardButtons" destination="EUc-s3-mHd" id="Acw-YT-u1W"/>
+                        <outletCollection property="cardButtons" destination="WYT-yG-ZO4" id="O68-Ai-Eds"/>
+                        <outletCollection property="cardButtons" destination="GgJ-Cs-d9I" id="35W-IU-buO"/>
+                        <outletCollection property="cardButtons" destination="IY3-k9-kxX" id="geT-D4-sCN"/>
+                        <outletCollection property="cardButtons" destination="cUR-al-gdG" id="o3d-mL-jvW"/>
+                        <outletCollection property="cardButtons" destination="ngs-YI-2JE" id="sh6-OC-mZX"/>
+                        <outletCollection property="cardButtons" destination="6a0-em-ESZ" id="aIs-7C-WGO"/>
+                        <outletCollection property="cardButtons" destination="RD7-RE-gSN" id="rOM-xz-S2N"/>
+                        <outletCollection property="cardButtons" destination="2qJ-na-m8b" id="9xg-nR-rea"/>
+                        <outletCollection property="cardButtons" destination="N0D-W9-8f9" id="3em-o0-whv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdK-6P-v4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -446,10 +1001,14 @@ QRTimaM
         <image name="setgame.png" width="30" height="30"/>
     </resources>
     <classes>
-        <class className="CardGameViewController" superclassName="UIViewController">
+        <class className="CardGameViewController" superclassName="GameViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
+        </class>
+        <class className="GameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="cardModeSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="browseHistory:" candidateClass="UISlider"/>
+                <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="historySlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="resultsLabel" candidateClass="UILabel"/>
@@ -457,7 +1016,7 @@ QRTimaM
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
             </relationships>
         </class>
-        <class className="SetGameViewController" superclassName="UIViewController">
+        <class className="SetGameViewController" superclassName="GameViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SetGameViewController.h"/>
         </class>
     </classes>
