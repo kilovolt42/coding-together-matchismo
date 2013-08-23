@@ -27,7 +27,7 @@
 				self.cards[i] = card;
 			}
 		}
-		self.history = [NSMutableArray arrayWithArray:@[@""]];
+		self.history = [NSMutableArray arrayWithArray:@[@{ @"Type" : @"Blank" }]];
 	}
 	
 	return self;
@@ -41,10 +41,11 @@
 	Card *card = [self cardAtIndex:index];
 	Card *secondCard = nil;
 	int matchScore = 0;
+	NSArray *cards;
 	
 	if (!card.isUnplayable) {
 		if (!card.isFaceUp) {
-			[self.history addObject:[NSString stringWithFormat:@"Flipped up %@", card.contents]];
+			[self.history addObject:@{ @"Type" : @"Flip", @"Cards" : @[card] }];
 			for (Card *otherCard in self.cards) {
 				if (otherCard.isFaceUp && !otherCard.isUnplayable) {
 					if (self.isThreeCardMode && !secondCard) {
@@ -52,42 +53,22 @@
 						continue;
 					} else if (self.isThreeCardMode) {
 						matchScore = [card match:@[secondCard, otherCard]];
+						cards = @[card, secondCard, otherCard];
 					} else {
 						matchScore = [card match:@[otherCard]];
+						cards = @[card, otherCard];
 					}
 					if (matchScore) {
 						otherCard.unplayable = YES;
 						secondCard.unplayable = YES;
 						card.unplayable = YES;
 						self.score += matchScore * MATCH_BONUS;
-						if (self.isThreeCardMode) {
-							[self.history addObject:[NSString stringWithFormat:@"Matched %@, %@ and %@ for %d points",
-													 card.contents,
-													 secondCard.contents,
-													 otherCard.contents,
-													 matchScore * MATCH_BONUS]];
-						} else {
-							[self.history addObject:[NSString stringWithFormat:@"Matched %@ and %@ for %d points",
-													 card.contents,
-													 otherCard.contents,
-													 matchScore * MATCH_BONUS]];
-						}
+						[self.history addObject:@{ @"Type" : @"Match", @"Cards" : cards, @"Score" : @(matchScore * MATCH_BONUS) }];
 					} else {
 						otherCard.faceUp = NO;
 						secondCard.faceUp = NO;
 						self.score -= MISMATCH_PENALTY;
-						if (self.isThreeCardMode) {
-							[self.history addObject:[NSString stringWithFormat:@"%@, %@ and %@ don't match, %d point penalty",
-													 card.contents,
-													 secondCard.contents,
-													 otherCard.contents,
-													 MISMATCH_PENALTY]];
-						} else {
-							[self.history addObject:[NSString stringWithFormat:@"%@ and %@ don't match, %d point penalty",
-													 card.contents,
-													 otherCard.contents,
-													 MISMATCH_PENALTY]];
-						}
+						[self.history addObject:@{ @"Type" : @"Mismatch", @"Cards" : cards, @"Score" : @(MISMATCH_PENALTY) }];
 					}
 					break;
 				}

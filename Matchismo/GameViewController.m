@@ -48,7 +48,7 @@
 	}
 	
 	self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
-	self.resultsLabel.text = [self.game.history lastObject];
+	[self updateResultsLabelWithProperties:[self.game.history lastObject]];
 	
 	self.historySlider.maximumValue = [self.game.history count] - 1;
 	self.resultsLabel.alpha = 1.0;
@@ -56,6 +56,46 @@
 
 - (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card {
 	// implemented by subclasses
+}
+
+- (void)updateResultsLabelWithProperties:(NSDictionary *)properties {
+	NSString *propertyType = properties[@"Type"];
+	
+	if ([propertyType isEqualToString:@"Blank"]) {
+		self.resultsLabel.text = @"";
+		return;
+	}
+	
+	NSArray *cards = properties[@"Cards"];
+	Card *firstCard = cards[0], *secondCard, *thirdCard;
+	
+	if ([propertyType isEqualToString:@"Flip"]) {
+		self.resultsLabel.text = [NSString stringWithFormat:@"Flipped up %@", firstCard.contents];
+		return;
+	}
+	
+	secondCard = cards[1];
+	if ([cards count] > 2) {
+		thirdCard = cards[2];
+	}
+	
+	NSNumber *score = properties[@"Score"];
+	
+	NSString *cardsString;
+	if (thirdCard) {
+		cardsString = [NSString stringWithFormat:@"%@, %@ and %@", firstCard.contents, secondCard.contents, thirdCard.contents];
+	} else {
+		cardsString = [NSString stringWithFormat:@"%@ and %@", firstCard.contents, secondCard.contents];
+	}
+	
+	NSString *results;
+	if ([propertyType isEqualToString:@"Match"]) {
+		results = [NSString stringWithFormat:@"Matched %@ for %d points", cardsString, [score intValue]];
+	} else if ([propertyType isEqualToString:@"Mismatch"]) {
+		results = [NSString stringWithFormat:@"%@ don't match, %d point penalty", cardsString, [score intValue]];
+	}
+	
+	self.resultsLabel.text = results;
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
@@ -66,7 +106,7 @@
 }
 
 - (IBAction)browseHistory:(UISlider *)sender {
-	self.resultsLabel.text = [self.game.history objectAtIndex:round(sender.value)];
+	[self updateResultsLabelWithProperties:[self.game.history objectAtIndex:round(sender.value)]];
 	if (round(sender.value) == sender.maximumValue) {
 		self.resultsLabel.alpha = 1.0;
 	} else {
