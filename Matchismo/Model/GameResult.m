@@ -32,15 +32,6 @@
 	return allGameResults;
 }
 
-- (id)init {
-	self = [super init];
-	if (self) {
-		_start = [NSDate date];
-		_end = _start;
-	}
-	return self;
-}
-
 // designated initializer
 - (id)initWithGameTypeKey:(NSString *)gameTypeKey {
 	self = [self init];
@@ -84,6 +75,7 @@
 - (void)setScore:(int)score {
 	_score = score;
 	self.end = [NSDate date];
+	if (!self.start) self.start = self.end;
 	[self synchronize];
 }
 
