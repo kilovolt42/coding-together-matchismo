@@ -28,6 +28,7 @@
 			}
 		}
 		self.history = [NSMutableArray arrayWithArray:@[@{ @"Type" : @"Blank" }]];
+		self.result = [[GameResult alloc] initWithGameTypeKey:[[deck class] description]];
 	}
 	
 	return self;
@@ -86,6 +87,11 @@
 - (NSMutableArray *)cards {
 	if (!_cards) _cards = [[NSMutableArray alloc] init];
 	return _cards;
+}
+
+- (void)setScore:(int)score {
+	_score = score;
+	self.result.score = self.score;
 }
 
 @end

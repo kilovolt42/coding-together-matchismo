@@ -976,6 +976,79 @@ QRTimaM
             </objects>
             <point key="canvasLocation" x="-5" y="399"/>
         </scene>
+        <!--Scores View Controller - Scores-->
+        <scene sceneID="gc0-7h-e4Y">
+            <objects>
+                <viewController id="bIF-hz-gUo" customClass="ScoresViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U3B-O0-Qrr">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Card Games:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhS-Y0-5eP">
+                                <rect key="frame" x="20" y="177" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Playing Card Games:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7K1-AK-2St">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6ha-ah-Bz4">
+                                <rect key="frame" x="20" y="49" width="280" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">1.
+2.
+3.
+4.
+5.
+6.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DeF-DF-9RN">
+                                <rect key="frame" x="20" y="206" width="280" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">1.
+2.
+3.
+4.
+5.
+6.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Jmq-KA-flc">
+                                <rect key="frame" x="20" y="362" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Score"/>
+                                    <segment title="Date"/>
+                                    <segment title="Duration"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sortOrderChanged:" destination="bIF-hz-gUo" eventType="valueChanged" id="KNd-YZ-StG"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scores" image="scores.png" id="dEk-EV-Qxn"/>
+                    <connections>
+                        <outlet property="cardScoresDisplay" destination="6ha-ah-Bz4" id="CLI-8a-QxT"/>
+                        <outlet property="setScoresDisplay" destination="DeF-DF-9RN" id="x4n-Up-EgL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Jz-dO-kT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="1007"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xgr-AD-Vie">
             <objects>
@@ -989,6 +1062,7 @@ QRTimaM
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="tOm-Ts-3e2"/>
                         <segue destination="uvA-Ar-Klr" kind="relationship" relationship="viewControllers" id="fsH-4O-xSd"/>
+                        <segue destination="bIF-hz-gUo" kind="relationship" relationship="viewControllers" id="leZ-uC-WTc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eka-Ts-GyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -998,6 +1072,7 @@ QRTimaM
     </scenes>
     <resources>
         <image name="cardgame.png" width="30" height="30"/>
+        <image name="scores.png" width="30" height="30"/>
         <image name="setgame.png" width="30" height="30"/>
     </resources>
     <classes>
@@ -1012,6 +1087,14 @@ QRTimaM
                 <relationship kind="outlet" name="resultsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ScoresViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoresViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sortOrderChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="cardScoresDisplay" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="setScoresDisplay" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="SetGameViewController" superclassName="GameViewController">

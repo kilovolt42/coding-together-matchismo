@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GameResult.h"
 #import "Deck.h"
 
 @interface CardMatchingGame : NSObject
 
 @property (nonatomic, readonly) int score;
 @property (nonatomic, strong) NSMutableArray *history;
+@property (nonatomic, strong) GameResult *result;
 @property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
 
 - (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck; // designated initializer
