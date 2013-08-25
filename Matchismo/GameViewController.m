@@ -23,6 +23,14 @@
 
 @implementation GameViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	NSDictionary *settings = [[NSUserDefaults standardUserDefaults] dictionaryForKey:SETTINGS_KEY];
+	if ([settings[DEAL_ON_TAB_KEY] boolValue]) {
+		[self deal];
+	}
+}
+
 - (void)setFlipCount:(int)flipCount {
 	_flipCount = flipCount;
 	self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];

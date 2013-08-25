@@ -21,20 +21,22 @@
 
 - (void)updateUI {
 	NSString *displayText = @"";
+	int rank = 1;
 	
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setDateStyle:NSDateFormatterShortStyle];
 	[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
 	
 	for (GameResult *result in [[GameResult gameResultsForGameTypeKey:[PlayingCardDeck description]] sortedArrayUsingSelector:self.sortSelector]) {
-		displayText = [displayText stringByAppendingFormat:@"Score: %d (%@, %0g sec)\n", result.score, [dateFormatter stringFromDate:result.end], round(result.duration)];
+		displayText = [displayText stringByAppendingFormat:@"%d. Score: %d (%@, %0g sec)\n", rank++,  result.score, [dateFormatter stringFromDate:result.end], round(result.duration)];
 	}
 	
 	self.cardScoresDisplay.text = displayText;
 	displayText = @"";
+	rank = 1;
 	
 	for (GameResult *result in [[GameResult gameResultsForGameTypeKey:[SetCardDeck description]] sortedArrayUsingSelector:self.sortSelector]) {
-		displayText = [displayText stringByAppendingFormat:@"Score: %d (%@, %0g sec)\n", result.score, [dateFormatter stringFromDate:result.end], round(result.duration)];
+		displayText = [displayText stringByAppendingFormat:@"%d. Score: %d (%@, %0g sec)\n", rank++, result.score, [dateFormatter stringFromDate:result.end], round(result.duration)];
 	}
 	
 	self.setScoresDisplay.text = displayText;

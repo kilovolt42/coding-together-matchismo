@@ -12,3 +12,6 @@
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
 #endif
+
+#define SETTINGS_KEY @"Settings_Key"
+#define DEAL_ON_TAB_KEY @"DealOnTab_Key"

@@ -69,7 +69,7 @@
 
 + (NSArray *)validColors {
 	static NSArray *validColors = nil;
-	if (!validColors) validColors = @[[UIColor redColor], [UIColor greenColor], [UIColor purpleColor]];
+	if (!validColors) validColors = @[[UIColor redColor], [UIColor colorWithRed:34.0/255.0 green:139.0/255.0 blue:34.0/255.0 alpha:1.0], [UIColor purpleColor]];
 	return validColors;
 }
 

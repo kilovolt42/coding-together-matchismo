@@ -34,6 +34,9 @@
 		2798B9A217C9122600E866D6 /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2798B9A117C9122600E866D6 /* GameResult.m */; };
 		2798B9B717CA790C00E866D6 /* scores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2798B9B517CA790C00E866D6 /* scores.png */; };
 		2798B9B817CA790C00E866D6 /* scores@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2798B9B617CA790C00E866D6 /* scores@2x.png */; };
+		2798B9BB17CA824400E866D6 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2798B9B917CA824400E866D6 /* settings.png */; };
+		2798B9BC17CA824400E866D6 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2798B9BA17CA824400E866D6 /* settings@2x.png */; };
+		2798B9BF17CA83E800E866D6 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2798B9BE17CA83E800E866D6 /* SettingsViewController.m */; };
 		27B0E3CA177419D90098F7AD /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0E3C9177419D90098F7AD /* SetCard.m */; };
 		27B0E3CD17741CC30098F7AD /* SetCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B0E3CC17741CC30098F7AD /* SetCardDeck.m */; };
 /* End PBXBuildFile section */
@@ -80,6 +83,10 @@
 		2798B9A117C9122600E866D6 /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameResult.m; path = Model/GameResult.m; sourceTree = "<group>"; };
 		2798B9B517CA790C00E866D6 /* scores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scores.png; sourceTree = "<group>"; };
 		2798B9B617CA790C00E866D6 /* scores@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scores@2x.png"; sourceTree = "<group>"; };
+		2798B9B917CA824400E866D6 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		2798B9BA17CA824400E866D6 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		2798B9BD17CA83E800E866D6 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2798B9BE17CA83E800E866D6 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		27B0E3C8177419D90098F7AD /* SetCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetCard.h; path = Model/SetCard.h; sourceTree = "<group>"; };
 		27B0E3C9177419D90098F7AD /* SetCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetCard.m; path = Model/SetCard.m; sourceTree = "<group>"; };
 		27B0E3CB17741CC30098F7AD /* SetCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetCardDeck.h; path = Model/SetCardDeck.h; sourceTree = "<group>"; };
@@ -139,6 +146,8 @@
 				2728193D17721F70005D45C9 /* SetGameViewController.m */,
 				2798B99D17C909E400E866D6 /* ScoresViewController.h */,
 				2798B99E17C909E400E866D6 /* ScoresViewController.m */,
+				2798B9BD17CA83E800E866D6 /* SettingsViewController.h */,
+				2798B9BE17CA83E800E866D6 /* SettingsViewController.m */,
 				2769BD6F17617217008F47C2 /* Assets */,
 				2756CE88175EA04900ACB5AE /* Model */,
 				2756CE60175E841200ACB5AE /* Supporting Files */,
@@ -177,6 +186,8 @@
 		2769BD6F17617217008F47C2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2798B9B917CA824400E866D6 /* settings.png */,
+				2798B9BA17CA824400E866D6 /* settings@2x.png */,
 				2798B9B517CA790C00E866D6 /* scores.png */,
 				2798B9B617CA790C00E866D6 /* scores@2x.png */,
 				2728194B1772289D005D45C9 /* cardgame.png */,
@@ -287,6 +298,8 @@
 				272819501772289D005D45C9 /* setgame@2x.png in Resources */,
 				2798B9B717CA790C00E866D6 /* scores.png in Resources */,
 				2798B9B817CA790C00E866D6 /* scores@2x.png in Resources */,
+				2798B9BB17CA824400E866D6 /* settings.png in Resources */,
+				2798B9BC17CA824400E866D6 /* settings@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +324,7 @@
 				27B0E3CD17741CC30098F7AD /* SetCardDeck.m in Sources */,
 				2798B99F17C909E400E866D6 /* ScoresViewController.m in Sources */,
 				2798B9A217C9122600E866D6 /* GameResult.m in Sources */,
+				2798B9BF17CA83E800E866D6 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

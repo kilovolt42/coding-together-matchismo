@@ -41,8 +41,9 @@
 	cardButton.enabled = !card.isUnplayable;
 	cardButton.alpha = card.isUnplayable ? 0.0 : 1.0;
 	
-	[cardButton setBackgroundColor:[UIColor whiteColor]];
 	if (cardButton.selected) {
+		[cardButton setBackgroundColor:[UIColor whiteColor]];
+	} else {
 		[cardButton setBackgroundColor:[UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0]];
 	}
 }
