@@ -11,13 +11,13 @@
 #import "SetCard.h"
 
 @interface SetGameViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
+
 @end
 
 @implementation SetGameViewController
 
-- (Class)deckClass {
-	return [SetCardDeck class];
+- (Deck *)createDeck {
+	return [[SetCardDeck alloc] init];
 }
 
 - (BOOL)isThreeCardMode {

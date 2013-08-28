@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Deck.h"
 
 @interface GameViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
+@property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
+
+- (Deck *)createDeck;
+- (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card;
+- (void)updateResultsLabelWithProperties:(NSDictionary *)properties;
 
 @end

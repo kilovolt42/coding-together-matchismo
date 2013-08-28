@@ -15,8 +15,8 @@
 
 @implementation CardGameViewController
 
-- (Class)deckClass {
-	return [PlayingCardDeck class];
+- (Deck *)createDeck {
+	return [[PlayingCardDeck alloc] init];
 }
 
 - (BOOL)isThreeCardMode {
@@ -38,6 +38,46 @@
 	cardButton.selected = card.isFaceUp;
 	cardButton.enabled = !card.isUnplayable;
 	cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
+}
+
+- (void)updateResultsLabelWithProperties:(NSDictionary *)properties {
+	NSString *propertyType = properties[@"Type"];
+	
+	if ([propertyType isEqualToString:@"Blank"]) {
+		self.resultsLabel.text = @"";
+		return;
+	}
+	
+	NSArray *cards = properties[@"Cards"];
+	Card *firstCard = cards[0], *secondCard, *thirdCard;
+	
+	if ([propertyType isEqualToString:@"Flip"]) {
+		self.resultsLabel.text = [NSString stringWithFormat:@"Flipped up %@", firstCard.contents];
+		return;
+	}
+	
+	secondCard = cards[1];
+	if ([cards count] > 2) {
+		thirdCard = cards[2];
+	}
+	
+	NSNumber *score = properties[@"Score"];
+	
+	NSString *cardsString;
+	if (thirdCard) {
+		cardsString = [NSString stringWithFormat:@"%@, %@ and %@", firstCard.contents, secondCard.contents, thirdCard.contents];
+	} else {
+		cardsString = [NSString stringWithFormat:@"%@ and %@", firstCard.contents, secondCard.contents];
+	}
+	
+	NSString *results;
+	if ([propertyType isEqualToString:@"Match"]) {
+		results = [NSString stringWithFormat:@"Matched %@ for %d points", cardsString, [score intValue]];
+	} else if ([propertyType isEqualToString:@"Mismatch"]) {
+		results = [NSString stringWithFormat:@"%@ don't match, %d point penalty", cardsString, [score intValue]];
+	}
+	
+	self.resultsLabel.text = results;
 }
 
 @end

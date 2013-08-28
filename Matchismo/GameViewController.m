@@ -15,10 +15,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
 @property (weak, nonatomic) IBOutlet UISlider *historySlider;
-@property (nonatomic) Class deckClass;
-@property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
 @end
 
 @implementation GameViewController
@@ -38,7 +35,7 @@
 
 - (CardMatchingGame *)game {
 	if (!_game) {
-		_game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[[self.deckClass alloc]init]];
+		_game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
 		_game.threeCardMode = self.isThreeCardMode;
 	}
 	return _game;
@@ -62,50 +59,6 @@
 	self.resultsLabel.alpha = 1.0;
 }
 
-- (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card {
-	// implemented by subclasses
-}
-
-- (void)updateResultsLabelWithProperties:(NSDictionary *)properties {
-	NSString *propertyType = properties[@"Type"];
-	
-	if ([propertyType isEqualToString:@"Blank"]) {
-		self.resultsLabel.text = @"";
-		return;
-	}
-	
-	NSArray *cards = properties[@"Cards"];
-	Card *firstCard = cards[0], *secondCard, *thirdCard;
-	
-	if ([propertyType isEqualToString:@"Flip"]) {
-		self.resultsLabel.text = [NSString stringWithFormat:@"Flipped up %@", firstCard.contents];
-		return;
-	}
-	
-	secondCard = cards[1];
-	if ([cards count] > 2) {
-		thirdCard = cards[2];
-	}
-	
-	NSNumber *score = properties[@"Score"];
-	
-	NSString *cardsString;
-	if (thirdCard) {
-		cardsString = [NSString stringWithFormat:@"%@, %@ and %@", firstCard.contents, secondCard.contents, thirdCard.contents];
-	} else {
-		cardsString = [NSString stringWithFormat:@"%@ and %@", firstCard.contents, secondCard.contents];
-	}
-	
-	NSString *results;
-	if ([propertyType isEqualToString:@"Match"]) {
-		results = [NSString stringWithFormat:@"Matched %@ for %d points", cardsString, [score intValue]];
-	} else if ([propertyType isEqualToString:@"Mismatch"]) {
-		results = [NSString stringWithFormat:@"%@ don't match, %d point penalty", cardsString, [score intValue]];
-	}
-	
-	self.resultsLabel.text = results;
-}
-
 - (IBAction)flipCard:(UIButton *)sender {
 	[self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
 	self.flipCount++;
@@ -126,6 +79,18 @@
 	self.game = nil;
 	self.flipCount = 0;
 	[self updateUI];
+}
+
+#pragma mark Abstract Methods
+
+- (Deck *)createDeck {
+	return nil;
+}
+
+- (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card {
+}
+
+- (void)updateResultsLabelWithProperties:(NSDictionary *)properties {
 }
 
 @end
