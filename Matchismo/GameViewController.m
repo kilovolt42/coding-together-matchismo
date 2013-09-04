@@ -76,13 +76,11 @@
 	NSMutableIndexSet *indexSet = [[NSMutableIndexSet alloc] init];
 	NSMutableArray *indexPathArray = [NSMutableArray arrayWithArray:@[]];
 	
-	for (UICollectionViewCell *cell in [self.cardCollectionView visibleCells]) {
-		NSIndexPath *indexPath = [self.cardCollectionView indexPathForCell:cell];
-		Card *card = [self.game cardAtIndex:indexPath.item];
-		if (card.isUnplayable) {
-			[indexSet addIndex:indexPath.item];
-			[indexPathArray addObject:indexPath];
-		}
+	NSArray *unplayableCards = self.game.unplayableCards;
+	for (Card *card in unplayableCards) {
+		int index = [self.game indexOfCard:card];
+		[indexSet addIndex:index];
+		[indexPathArray addObject:[NSIndexPath indexPathForItem:index inSection:0]];
 	}
 	
 	[self.game removeCardsAtIndexes:indexSet];
@@ -92,6 +90,7 @@
 - (IBAction)deal {
 	self.game = nil;
 	[self.cardCollectionView reloadData];
+	[self.cardCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
 	[self updateUI];
 }
 

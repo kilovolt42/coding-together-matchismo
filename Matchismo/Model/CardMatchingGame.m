@@ -49,7 +49,7 @@
 	
 	if (!card.isUnplayable) {
 		if (!card.isFaceUp) {
-			[self.history addObject:@{ @"Type" : @"Flip", @"Cards" : @[card] }];
+			[self.history addObject:@{ @"Type" : @"FlipUp", @"Cards" : @[card] }];
 			for (Card *otherCard in self.cards) {
 				if (otherCard.isFaceUp && !otherCard.isUnplayable) {
 					if (self.isThreeCardMode && !secondCard) {
@@ -69,6 +69,7 @@
 						self.score += matchScore * MATCH_BONUS;
 						[self.history addObject:@{ @"Type" : @"Match", @"Cards" : cards, @"Score" : @(matchScore * MATCH_BONUS) }];
 					} else {
+						if (self.threeCardMode) card.faceUp = YES;
 						otherCard.faceUp = NO;
 						secondCard.faceUp = NO;
 						self.score -= MISMATCH_PENALTY;
@@ -78,6 +79,8 @@
 				}
 			}
 			self.score -= FLIP_COST;
+		} else {
+			[self.history addObject:@{ @"Type" : @"FlipDown", @"Cards" : @[card] }];
 		}
 		card.faceUp = !card.faceUp;
 	}
@@ -85,6 +88,10 @@
 
 - (Card *)cardAtIndex:(NSUInteger)index {
 	return (index < [self.cards count]) ? self.cards[index] : nil;
+}
+
+- (int)indexOfCard:(Card *)card {
+	return [self.cards indexOfObject:card];
 }
 
 - (NSMutableArray *)cards {
@@ -116,6 +123,14 @@
 			[self.cards addObject:card];
 		}
 	}
+}
+
+- (NSArray *)unplayableCards {
+	NSMutableArray *unplayableCards = [[NSMutableArray alloc] init];
+	for (Card *card in self.cards) {
+		if (card.unplayable) [unplayableCards addObject:card];
+	}
+	return [unplayableCards copy];
 }
 
 @end

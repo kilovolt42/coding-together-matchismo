@@ -65,8 +65,11 @@
 	NSArray *cards = properties[@"Cards"];
 	Card *firstCard = cards[0], *secondCard, *thirdCard;
 	
-	if ([propertyType isEqualToString:@"Flip"]) {
+	if ([propertyType isEqualToString:@"FlipUp"]) {
 		self.resultsLabel.text = [NSString stringWithFormat:@"Flipped up %@", firstCard.contents];
+		return;
+	} else if ([propertyType isEqualToString:@"FlipDown"]) {
+		self.resultsLabel.text = [NSString stringWithFormat:@"Flipped down %@", firstCard.contents];
 		return;
 	}
 	

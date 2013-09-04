@@ -10,12 +10,19 @@
 #import "SetCardDeck.h"
 #import "SetCard.h"
 #import "SetCardCollectionViewCell.h"
+#import "SetCardView.h"
 
 @interface SetGameViewController ()
-
+@property (weak, nonatomic) IBOutlet UIView *activeCardsView;
+@property (strong, nonatomic) NSMutableArray *activeCards;
 @end
 
 @implementation SetGameViewController
+
+- (NSMutableArray *)activeCards {
+	if (!_activeCards) _activeCards = [[NSMutableArray alloc] init];
+	return _activeCards;
+}
 
 - (Deck *)createDeck {
 	return [[SetCardDeck alloc] init];
@@ -47,55 +54,63 @@
 	
 	if ([propertyType isEqualToString:@"Blank"]) {
 		self.resultsLabel.text = @"";
+		self.activeCards = nil;
+		[self updateActiveCardsView];
 		return;
 	}
 	
 	NSArray *cards = properties[@"Cards"];
 	SetCard *firstCard = cards[0], *secondCard, *thirdCard;
-	NSAttributedString *firstCardAttributedString = [self attributedStringForSetCard:firstCard], *secondCardAttributedString, *thirdCardAttributedString;
-	NSMutableAttributedString *results;
 	
-	if ([propertyType isEqualToString:@"Flip"]) {
-		results = [[NSMutableAttributedString alloc] initWithString:@"Flipped up "];
-		[results appendAttributedString:[self attributedStringForSetCard:firstCard]];
-		self.resultsLabel.attributedText = results;
+	if ([propertyType isEqualToString:@"FlipUp"]) {
+		self.resultsLabel.text = @"";
+		[self.activeCards addObject:firstCard];
+		[self updateActiveCardsView];
+		return;
+	} else if ([propertyType isEqualToString:@"FlipDown"]) {
+		self.resultsLabel.text = @"";
+		[self.activeCards removeObject:firstCard];
+		[self updateActiveCardsView];
 		return;
 	}
 	
 	secondCard = cards[1];
-	secondCardAttributedString = [self attributedStringForSetCard:secondCard];
+	self.activeCards = [NSMutableArray arrayWithArray:@[firstCard, secondCard]];
 	if ([cards count] > 2) {
 		thirdCard = cards[2];
-		thirdCardAttributedString = [self attributedStringForSetCard:thirdCard];
+		[self.activeCards addObject:thirdCard];
 	}
 	
 	NSNumber *score = properties[@"Score"];
-	
-	NSMutableAttributedString *cardsString;
-	if (thirdCard) {
-		cardsString = [[NSMutableAttributedString alloc] initWithAttributedString:firstCardAttributedString];
-		[cardsString appendAttributedString:[[NSAttributedString alloc] initWithString:@", "]];
-		[cardsString appendAttributedString:secondCardAttributedString];
-		[cardsString appendAttributedString:[[NSAttributedString alloc] initWithString:@" and "]];
-		[cardsString appendAttributedString:thirdCardAttributedString];
-	} else {
-		cardsString = [[NSMutableAttributedString alloc] initWithAttributedString:firstCardAttributedString];
-		[cardsString appendAttributedString:[[NSAttributedString alloc] initWithString:@" and "]];
-		[cardsString appendAttributedString:secondCardAttributedString];
-	}
-	
 	if ([propertyType isEqualToString:@"Match"]) {
-		results = [[NSMutableAttributedString alloc] initWithString:@"Matched "];
-		[results appendAttributedString:cardsString];
-		[results appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" for %d points", [score intValue]]]];
+		self.resultsLabel.text = [NSString stringWithFormat:@"Matched for %d points", [score intValue]];
+		[self updateActiveCardsView];
+		self.activeCards = nil;
 	} else if ([propertyType isEqualToString:@"Mismatch"]) {
-		results = [[NSMutableAttributedString alloc] initWithAttributedString:cardsString];
-		[results appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" don't match, %d point penalty", [score intValue]]]];
+		self.resultsLabel.text = [NSString stringWithFormat:@"Mismatch, %d point penalty", [score intValue]];
+		[self updateActiveCardsView];
+		self.activeCards = nil;
+	}
+}
+
+- (void)updateActiveCardsView {
+	NSMutableArray *subviews = [[NSMutableArray alloc] init];
+	for (UIView *subview in self.activeCardsView.subviews) {
+		[subviews addObject:subview];
+	}
+	for (UIView *subview in subviews) {
+		[subview removeFromSuperview];
 	}
 	
-	[results addAttributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:17] } range:NSMakeRange(0, [results length])];
+	CGFloat height = self.activeCardsView.bounds.size.height;
+	CGFloat width = 0.7*height;
 	
-	self.resultsLabel.attributedText = results;
+	for (int i = 0; i < [self.activeCards count]; i++) {
+		SetCardView *setCardView = [[SetCardView alloc] initWithFrame:CGRectMake(i*width + 0.1*i*width, 0, width, height)];
+		setCardView.backgroundColor = [UIColor clearColor];
+		[self setupSetCardView:setCardView usingSetCard:self.activeCards[i]];
+		[self.activeCardsView addSubview:setCardView];
+	}
 }
 
 - (void)updateCell:(UICollectionViewCell *)cell usingCard:(Card *)card animate:(BOOL)animate {
@@ -103,26 +118,31 @@
 		SetCardView *setCardView = ((SetCardCollectionViewCell *)cell).setCardView;
 		if ([card isKindOfClass:[SetCard class]]) {
 			SetCard *setCard = (SetCard *)card;
-			setCardView.number = setCard.number;
-			setCardView.color = setCard.color;
+			[self setupSetCardView:setCardView usingSetCard:setCard];
 			setCardView.selected = setCard.isFaceUp;
 			setCardView.alpha = setCard.isUnplayable ? 0.3 : 1.0;
-			
-			if ([setCard.symbol isEqualToString:@"▲"]) {
-				setCardView.symbol = SetCardSymbolDiamond;
-			} else if ([setCard.symbol isEqualToString:@"■"]) {
-				setCardView.symbol = SetCardSymbolSquiggle;
-			} else {
-				setCardView.symbol = SetCardSymbolOval;
-			}
-			if (setCard.shade == 1.0) {
-				setCardView.shading = SetCardShadingSolid;
-			} else if (setCard.shade == 0.0) {
-				setCardView.shading = SetCardShadingOpen;
-			} else {
-				setCardView.shading = SetCardShadingStriped;
-			}
 		}
+	}
+}
+
+- (void)setupSetCardView:(SetCardView *)setCardView usingSetCard:(SetCard *)setCard {
+	setCardView.number = setCard.number;
+	setCardView.color = setCard.color;
+	
+	if ([setCard.symbol isEqualToString:@"▲"]) {
+		setCardView.symbol = SetCardSymbolDiamond;
+	} else if ([setCard.symbol isEqualToString:@"■"]) {
+		setCardView.symbol = SetCardSymbolSquiggle;
+	} else {
+		setCardView.symbol = SetCardSymbolOval;
+	}
+	
+	if (setCard.shade == 1.0) {
+		setCardView.shading = SetCardShadingSolid;
+	} else if (setCard.shade == 0.0) {
+		setCardView.shading = SetCardShadingOpen;
+	} else {
+		setCardView.shading = SetCardShadingStriped;
 	}
 }
 
