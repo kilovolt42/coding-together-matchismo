@@ -285,7 +285,8 @@
 			children = (
 				2798B9AE17C9490D00E866D6 /* Cards */,
 				2798B9AD17C9490200E866D6 /* Decks */,
-				2798B9AC17C948F100E866D6 /* Card Matching Games */,
+				2756CE8917601A0800ACB5AE /* CardMatchingGame.h */,
+				2756CE8A17601A0800ACB5AE /* CardMatchingGame.m */,
 				2798B9A017C9122600E866D6 /* GameResult.h */,
 				2798B9A117C9122600E866D6 /* GameResult.m */,
 			);
@@ -308,15 +309,6 @@
 				2769BD6D17617176008F47C2 /* card.png */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		2798B9AC17C948F100E866D6 /* Card Matching Games */ = {
-			isa = PBXGroup;
-			children = (
-				2756CE8917601A0800ACB5AE /* CardMatchingGame.h */,
-				2756CE8A17601A0800ACB5AE /* CardMatchingGame.m */,
-			);
-			name = "Card Matching Games";
 			sourceTree = "<group>";
 		};
 		2798B9AD17C9490200E866D6 /* Decks */ = {

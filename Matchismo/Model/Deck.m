@@ -41,4 +41,8 @@
 	return randomCard;
 }
 
+- (int)count {
+	return [self.cards count];
+}
+
 @end

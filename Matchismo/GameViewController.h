@@ -15,6 +15,7 @@
 @property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
 @property (nonatomic) NSUInteger startingCardCount;
 @property (nonatomic) BOOL shouldRemoveUnplayableCards;
+@property (nonatomic) NSUInteger additionalCardCount;
 
 - (Deck *)createDeck;
 - (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card;

@@ -33,6 +33,10 @@
 	return NO;
 }
 
+- (NSUInteger)additionalCardCount {
+	return 0;
+}
+
 - (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card {
 	UIImage *cardBackImage = [UIImage imageNamed:@"card.png"];
 	UIImage *blankImage = [[UIImage alloc] init];
@@ -102,7 +106,7 @@
 			
 			if (animate) {
 				[UIView transitionWithView:playingCardView
-								  duration:0.5
+								  duration:0.3
 								   options:playingCard.faceUp ? UIViewAnimationOptionTransitionFlipFromRight : UIViewAnimationOptionTransitionFlipFromLeft
 								animations:^{}
 								completion:NULL];

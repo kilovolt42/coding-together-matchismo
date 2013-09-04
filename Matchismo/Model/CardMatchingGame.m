@@ -105,4 +105,17 @@
 	return [self.cards count];
 }
 
+- (int)cardsInDeck {
+	return self.deck.count;
+}
+
+- (void)dealAdditionalCards:(NSUInteger)cardCount {
+	for (int i = 0; i < cardCount; i++) {
+		Card *card = [self.deck drawRandomCard];
+		if (card) {
+			[self.cards addObject:card];
+		}
+	}
+}
+
 @end

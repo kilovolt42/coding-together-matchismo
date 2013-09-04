@@ -33,6 +33,10 @@
 	return YES;
 }
 
+- (NSUInteger)additionalCardCount {
+	return 3;
+}
+
 - (NSMutableAttributedString *)attributedStringForSetCard:(SetCard *)card {
 	NSDictionary *attributes = @{ NSForegroundColorAttributeName : [card.color colorWithAlphaComponent:card.shade], NSStrokeWidthAttributeName : @-8, NSStrokeColorAttributeName : card.color };
 	return [[NSMutableAttributedString alloc] initWithString:card.contents attributes:attributes];

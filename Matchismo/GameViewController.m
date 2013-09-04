@@ -13,6 +13,7 @@
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *cardCollectionView;
+@property (weak, nonatomic) IBOutlet UIButton *dealAdditionalCardsButton;
 @end
 
 @implementation GameViewController
@@ -55,7 +56,7 @@
 		[self updateCell:cell usingCard:card animate:NO];
 	}
 	
-	self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+	self.scoreLabel.text = [NSString stringWithFormat:@"%d", self.game.score];
 	[self updateResultsLabelWithProperties:[self.game.history lastObject]];
 }
 
@@ -92,6 +93,20 @@
 	self.game = nil;
 	[self.cardCollectionView reloadData];
 	[self updateUI];
+}
+
+- (IBAction)dealAdditionalCards {
+	[self.game dealAdditionalCards:self.additionalCardCount];
+	[self.cardCollectionView reloadData];
+	
+	int index = [self.cardCollectionView numberOfItemsInSection:0];
+	NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index-1 inSection:0];
+	[self.cardCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
+	
+	if (self.game.cardsInDeck == 0) {
+		self.dealAdditionalCardsButton.enabled = NO;
+		self.dealAdditionalCardsButton.alpha = 0.3;
+	}
 }
 
 #pragma mark Abstract Methods
