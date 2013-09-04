@@ -16,9 +16,11 @@
 @property (nonatomic, strong) NSMutableArray *history;
 @property (nonatomic, strong) GameResult *result;
 @property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
+@property (nonatomic) int cardsInPlay;
 
 - (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck; // designated initializer
 - (void)flipCardAtIndex:(NSUInteger)index;
 - (Card *)cardAtIndex:(NSUInteger)index;
+- (void)removeCardsAtIndexes:(NSIndexSet *)indexes;
 
 @end

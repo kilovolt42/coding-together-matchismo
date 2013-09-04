@@ -9,6 +9,7 @@
 #import "SetGameViewController.h"
 #import "SetCardDeck.h"
 #import "SetCard.h"
+#import "SetCardCollectionViewCell.h"
 
 @interface SetGameViewController ()
 
@@ -24,28 +25,17 @@
 	return YES;
 }
 
+- (NSUInteger)startingCardCount {
+	return 12;
+}
+
+- (BOOL)shouldRemoveUnplayableCards {
+	return YES;
+}
+
 - (NSMutableAttributedString *)attributedStringForSetCard:(SetCard *)card {
 	NSDictionary *attributes = @{ NSForegroundColorAttributeName : [card.color colorWithAlphaComponent:card.shade], NSStrokeWidthAttributeName : @-8, NSStrokeColorAttributeName : card.color };
 	return [[NSMutableAttributedString alloc] initWithString:card.contents attributes:attributes];
-}
-
-- (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card {
-	NSMutableAttributedString *attributedString = [self attributedStringForSetCard:(SetCard *)card];
-	[attributedString addAttributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:21] } range:NSMakeRange(0, [attributedString length])];
-	
-	[cardButton setAttributedTitle:attributedString forState:UIControlStateNormal];
-	[cardButton setAttributedTitle:attributedString forState:UIControlStateSelected];
-	[cardButton setAttributedTitle:attributedString forState:UIControlStateSelected|UIControlStateDisabled];
-	
-	cardButton.selected = card.isFaceUp;
-	cardButton.enabled = !card.isUnplayable;
-	cardButton.alpha = card.isUnplayable ? 0.0 : 1.0;
-	
-	if (cardButton.selected) {
-		[cardButton setBackgroundColor:[UIColor whiteColor]];
-	} else {
-		[cardButton setBackgroundColor:[UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0]];
-	}
 }
 
 - (void)updateResultsLabelWithProperties:(NSDictionary *)properties {
@@ -102,6 +92,34 @@
 	[results addAttributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:17] } range:NSMakeRange(0, [results length])];
 	
 	self.resultsLabel.attributedText = results;
+}
+
+- (void)updateCell:(UICollectionViewCell *)cell usingCard:(Card *)card animate:(BOOL)animate {
+	if ([cell isKindOfClass:[SetCardCollectionViewCell class]]) {
+		SetCardView *setCardView = ((SetCardCollectionViewCell *)cell).setCardView;
+		if ([card isKindOfClass:[SetCard class]]) {
+			SetCard *setCard = (SetCard *)card;
+			setCardView.number = setCard.number;
+			setCardView.color = setCard.color;
+			setCardView.selected = setCard.isFaceUp;
+			setCardView.alpha = setCard.isUnplayable ? 0.3 : 1.0;
+			
+			if ([setCard.symbol isEqualToString:@"▲"]) {
+				setCardView.symbol = SetCardSymbolDiamond;
+			} else if ([setCard.symbol isEqualToString:@"■"]) {
+				setCardView.symbol = SetCardSymbolSquiggle;
+			} else {
+				setCardView.symbol = SetCardSymbolOval;
+			}
+			if (setCard.shade == 1.0) {
+				setCardView.shading = SetCardShadingSolid;
+			} else if (setCard.shade == 0.0) {
+				setCardView.shading = SetCardShadingOpen;
+			} else {
+				setCardView.shading = SetCardShadingStriped;
+			}
+		}
+	}
 }
 
 @end

@@ -13,9 +13,12 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
 @property (nonatomic, getter=isThreeCardMode) BOOL threeCardMode;
+@property (nonatomic) NSUInteger startingCardCount;
+@property (nonatomic) BOOL shouldRemoveUnplayableCards;
 
 - (Deck *)createDeck;
 - (void)updateCardButton:(UIButton *)cardButton forCard:(Card *)card;
 - (void)updateResultsLabelWithProperties:(NSDictionary *)properties;
+- (void)updateCell:(UICollectionViewCell *)cell usingCard:(Card *)card animate:(BOOL)animate;
 
 @end

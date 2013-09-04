@@ -11,6 +11,7 @@
 @interface CardMatchingGame()
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic) int score;
+@property (strong, nonatomic) Deck *deck;
 @end
 
 @implementation CardMatchingGame
@@ -19,6 +20,7 @@
 	self = [super init];
 	
 	if (self) {
+		self.cards = nil;
 		for (int i = 0; i < cardCount; i++) {
 			Card *card = [deck drawRandomCard];
 			if (!card) {
@@ -27,6 +29,7 @@
 				self.cards[i] = card;
 			}
 		}
+		self.deck = deck;
 		self.history = [NSMutableArray arrayWithArray:@[@{ @"Type" : @"Blank" }]];
 		self.result = [[GameResult alloc] initWithGameTypeKey:[[deck class] description]];
 	}
@@ -92,6 +95,14 @@
 - (void)setScore:(int)score {
 	_score = score;
 	self.result.score = self.score;
+}
+
+- (void)removeCardsAtIndexes:(NSIndexSet *)indexes {
+	[self.cards removeObjectsAtIndexes:indexes];
+}
+
+- (int)cardsInPlay {
+	return [self.cards count];
 }
 
 @end

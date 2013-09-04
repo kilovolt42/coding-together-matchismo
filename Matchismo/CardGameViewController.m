@@ -8,6 +8,8 @@
 
 #import "CardGameViewController.h"
 #import "PlayingCardDeck.h"
+#import "PlayingCard.h"
+#import "PlayingCardCollectionViewCell.h"
 
 @interface CardGameViewController ()
 
@@ -20,6 +22,14 @@
 }
 
 - (BOOL)isThreeCardMode {
+	return NO;
+}
+
+- (NSUInteger)startingCardCount {
+	return 22;
+}
+
+- (BOOL)shouldRemoveUnplayableCards {
 	return NO;
 }
 
@@ -78,6 +88,27 @@
 	}
 	
 	self.resultsLabel.text = results;
+}
+
+- (void)updateCell:(UICollectionViewCell *)cell usingCard:(Card *)card animate:(BOOL)animate {
+	if ([cell isKindOfClass:[PlayingCardCollectionViewCell class]]) {
+		PlayingCardView *playingCardView = ((PlayingCardCollectionViewCell *)cell).playingCardView;
+		if ([card isKindOfClass:[PlayingCard class]]) {
+			PlayingCard *playingCard = (PlayingCard *)card;
+			playingCardView.rank = playingCard.rank;
+			playingCardView.suit = playingCard.suit;
+			playingCardView.faceUp = playingCard.isFaceUp;
+			playingCardView.alpha = playingCard.isUnplayable ? 0.3 : 1.0;
+			
+			if (animate) {
+				[UIView transitionWithView:playingCardView
+								  duration:0.5
+								   options:playingCard.faceUp ? UIViewAnimationOptionTransitionFlipFromRight : UIViewAnimationOptionTransitionFlipFromLeft
+								animations:^{}
+								completion:NULL];
+			}
+		}
+	}
 }
 
 @end
