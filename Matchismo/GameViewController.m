@@ -92,6 +92,8 @@
 	[self.cardCollectionView reloadData];
 	[self.cardCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
 	[self updateUI];
+	self.dealAdditionalCardsButton.enabled = YES;
+	self.dealAdditionalCardsButton.alpha = 1.0;
 }
 
 - (IBAction)dealAdditionalCards {
