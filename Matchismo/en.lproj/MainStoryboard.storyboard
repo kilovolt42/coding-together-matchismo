@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1DJ-5z-4QW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1DJ-5z-4QW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,23 +12,17 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fZS-Lb-UIt">
-                                <rect key="frame" x="108" y="366" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZS-Lb-UIt">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="FQa-Qh-3B4">
-                                <rect key="frame" x="20" y="333" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FQa-Qh-3B4">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C8U-ri-IQj">
-                                <rect key="frame" x="220" y="362" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="428" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8U-ri-IQj">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Deal">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,10 +35,8 @@
                                     <action selector="deal" destination="2" eventType="touchUpInside" id="heX-Ox-aKb"/>
                                 </connections>
                             </button>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="BBR-Tv-KJP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="325"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-Tv-KJP">
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qo0-qF-UBL">
                                     <size key="itemSize" width="70" height="100"/>
@@ -60,14 +52,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view opaque="NO" contentMode="scaleToFill" id="Sre-SN-IO6" customClass="PlayingCardView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sre-SN-IO6" customClass="PlayingCardView">
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="Sre-SN-IO6" firstAttribute="trailing" secondItem="tuf-yf-grg" secondAttribute="trailing" type="default" id="4bG-P7-g85"/>
+                                            <constraint firstItem="Sre-SN-IO6" firstAttribute="bottom" secondItem="tuf-yf-grg" secondAttribute="bottom" type="default" id="Ro4-4q-Iq6"/>
+                                            <constraint firstItem="Sre-SN-IO6" firstAttribute="top" secondItem="tuf-yf-grg" secondAttribute="top" type="default" id="j0U-tE-vbr"/>
+                                            <constraint firstItem="Sre-SN-IO6" firstAttribute="leading" secondItem="tuf-yf-grg" secondAttribute="leading" type="default" id="kBa-FL-FUn"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="playingCardView" destination="Sre-SN-IO6" id="5VK-sw-ZeL"/>
                                         </connections>
@@ -80,6 +76,21 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FQa-Qh-3B4" firstAttribute="top" secondItem="BBR-Tv-KJP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="35t-pc-KZc"/>
+                            <constraint firstItem="BBR-Tv-KJP" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="5hi-1U-ffq"/>
+                            <constraint firstItem="FQa-Qh-3B4" firstAttribute="centerX" secondItem="fZS-Lb-UIt" secondAttribute="centerX" type="default" id="8AQ-Dn-U5k"/>
+                            <constraint firstItem="BBR-Tv-KJP" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="9d5-54-ETZ"/>
+                            <constraint firstItem="fZS-Lb-UIt" firstAttribute="centerY" secondItem="C8U-ri-IQj" secondAttribute="centerY" type="default" id="FAF-ih-8ip"/>
+                            <constraint firstItem="C8U-ri-IQj" firstAttribute="top" secondItem="FQa-Qh-3B4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HCN-2W-Qqb"/>
+                            <constraint firstItem="C8U-ri-IQj" firstAttribute="baseline" secondItem="fZS-Lb-UIt" secondAttribute="baseline" type="default" id="Pbx-oI-7MN"/>
+                            <constraint firstAttribute="trailing" secondItem="FQa-Qh-3B4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="c6C-KG-lnS"/>
+                            <constraint firstItem="FQa-Qh-3B4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="euG-yb-FFE"/>
+                            <constraint firstItem="C8U-ri-IQj" firstAttribute="leading" secondItem="fZS-Lb-UIt" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="l08-q0-P4g"/>
+                            <constraint firstItem="BBR-Tv-KJP" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="mMG-Ws-ibv"/>
+                            <constraint firstAttribute="trailing" secondItem="C8U-ri-IQj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tee-vy-3Pr"/>
+                            <constraint firstAttribute="bottom" secondItem="C8U-ri-IQj" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="uf8-ru-Nbi"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Card Game" image="cardgame.png" id="2SD-z7-g4q"/>
                     <connections>
@@ -105,9 +116,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CF4-LJ-aqq">
-                                <rect key="frame" x="220" y="362" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="352" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF4-LJ-aqq">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Deal">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,9 +129,7 @@
                                     <action selector="deal" destination="uvA-Ar-Klr" eventType="touchUpInside" id="kVV-Ot-yK1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XqQ-F5-yds">
-                                <rect key="frame" x="20" y="362" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="351" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqQ-F5-yds">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="3 Cards">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -135,22 +142,16 @@
                                     <action selector="dealAdditionalCards" destination="uvA-Ar-Klr" eventType="touchUpInside" id="tFa-4X-lGn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ijJ-HG-zLg">
-                                <rect key="frame" x="108" y="366" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijJ-HG-zLg">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="qtA-Kh-FCa">
-                                <rect key="frame" x="154" y="316" width="146" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="106" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qtA-Kh-FCa">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Rdm-7O-fK5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="291"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rdm-7O-fK5">
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tBu-14-ALY">
                                     <size key="itemSize" width="70" height="100"/>
@@ -166,14 +167,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view opaque="NO" contentMode="scaleToFill" id="lRk-XD-Lf4" customClass="SetCardView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRk-XD-Lf4" customClass="SetCardView">
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="lRk-XD-Lf4" firstAttribute="top" secondItem="8cH-03-BOi" secondAttribute="top" type="default" id="15p-68-PqP"/>
+                                            <constraint firstItem="lRk-XD-Lf4" firstAttribute="bottom" secondItem="8cH-03-BOi" secondAttribute="bottom" type="default" id="TVe-DW-dB9"/>
+                                            <constraint firstItem="lRk-XD-Lf4" firstAttribute="trailing" secondItem="8cH-03-BOi" secondAttribute="trailing" type="default" id="xnq-3x-jqH"/>
+                                            <constraint firstItem="lRk-XD-Lf4" firstAttribute="leading" secondItem="8cH-03-BOi" secondAttribute="leading" type="default" id="zAA-Ui-RmP"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="setCardView" destination="lRk-XD-Lf4" id="yxm-kR-3Si"/>
                                         </connections>
@@ -184,13 +189,34 @@
                                     <outletCollection property="gestureRecognizers" destination="vn0-pT-QlU" appends="YES" id="cua-dm-2Z0"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" id="yEV-qA-9U8">
-                                <rect key="frame" x="20" y="299" width="126" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEV-qA-9U8">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" type="user" id="D4Q-53-PUJ"/>
+                                    <constraint firstAttribute="height" constant="55" type="user" id="L0k-km-dn0"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rdm-7O-fK5" firstAttribute="trailing" secondItem="htV-9a-m3P" secondAttribute="trailing" type="default" id="3ax-TM-jdS"/>
+                            <constraint firstItem="ijJ-HG-zLg" firstAttribute="leading" secondItem="XqQ-F5-yds" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="4Bk-6Q-RSo"/>
+                            <constraint firstItem="XqQ-F5-yds" firstAttribute="baseline" secondItem="CF4-LJ-aqq" secondAttribute="baseline" type="user" id="9a3-WD-uhN"/>
+                            <constraint firstItem="qtA-Kh-FCa" firstAttribute="top" secondItem="Rdm-7O-fK5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CUD-V3-ASh"/>
+                            <constraint firstAttribute="trailing" secondItem="CF4-LJ-aqq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CqM-Oz-Nuw"/>
+                            <constraint firstAttribute="trailing" secondItem="qtA-Kh-FCa" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="E5z-qd-l0h"/>
+                            <constraint firstItem="Rdm-7O-fK5" firstAttribute="leading" secondItem="htV-9a-m3P" secondAttribute="leading" type="default" id="Ibo-HD-DDR"/>
+                            <constraint firstItem="qtA-Kh-FCa" firstAttribute="leading" secondItem="yEV-qA-9U8" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="QS2-Sd-eDO"/>
+                            <constraint firstItem="yEV-qA-9U8" firstAttribute="top" secondItem="Rdm-7O-fK5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QvS-ab-Y5n"/>
+                            <constraint firstAttribute="bottom" secondItem="CF4-LJ-aqq" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="VV2-D3-xJP"/>
+                            <constraint firstItem="XqQ-F5-yds" firstAttribute="leading" secondItem="htV-9a-m3P" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XEe-hM-D5I"/>
+                            <constraint firstItem="Rdm-7O-fK5" firstAttribute="top" secondItem="htV-9a-m3P" secondAttribute="top" type="default" id="ayj-Zn-Ucp"/>
+                            <constraint firstAttribute="bottom" secondItem="XqQ-F5-yds" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="hsc-td-ZSu"/>
+                            <constraint firstItem="CF4-LJ-aqq" firstAttribute="leading" secondItem="ijJ-HG-zLg" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="lGc-xP-7Dh"/>
+                            <constraint firstItem="ijJ-HG-zLg" firstAttribute="centerY" secondItem="CF4-LJ-aqq" secondAttribute="centerY" type="default" id="vaV-VX-kAw"/>
+                            <constraint firstItem="yEV-qA-9U8" firstAttribute="leading" secondItem="htV-9a-m3P" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="wq0-eo-slo"/>
+                            <constraint firstItem="XqQ-F5-yds" firstAttribute="top" secondItem="yEV-qA-9U8" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="xZX-tw-s27"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Game" image="setgame.png" id="3bo-bT-kzo"/>
                     <connections>
@@ -208,7 +234,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-5" y="399"/>
+            <point key="canvasLocation" x="-6" y="378"/>
         </scene>
         <!--Scores View Controller - Scores-->
         <scene sceneID="gc0-7h-e4Y">
@@ -218,37 +244,12 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Card Games:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhS-Y0-5eP">
-                                <rect key="frame" x="20" y="191" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Playing Card Games:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7K1-AK-2St">
-                                <rect key="frame" x="20" y="20" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="6ha-ah-Bz4">
-                                <rect key="frame" x="20" y="49" width="280" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-ah-Bz4">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="DeF-DF-9RN">
-                                <rect key="frame" x="20" y="220" width="280" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Jmq-KA-flc">
-                                <rect key="frame" x="20" y="362" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jmq-KA-flc">
                                 <segments>
                                     <segment title="Score"/>
                                     <segment title="Date"/>
@@ -260,11 +261,19 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jmq-KA-flc" firstAttribute="leading" secondItem="U3B-O0-Qrr" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VRQ-Pa-TeS"/>
+                            <constraint firstItem="6ha-ah-Bz4" firstAttribute="leading" secondItem="U3B-O0-Qrr" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="abw-F7-ogo"/>
+                            <constraint firstItem="6ha-ah-Bz4" firstAttribute="top" secondItem="U3B-O0-Qrr" secondAttribute="top" constant="20" symbolic="YES" type="default" id="bNq-lW-Tfy"/>
+                            <constraint firstAttribute="bottom" secondItem="Jmq-KA-flc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dBO-sl-jLs"/>
+                            <constraint firstAttribute="trailing" secondItem="Jmq-KA-flc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gXX-o4-gHc"/>
+                            <constraint firstAttribute="trailing" secondItem="6ha-ah-Bz4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hW0-HA-hWo"/>
+                            <constraint firstItem="Jmq-KA-flc" firstAttribute="top" secondItem="6ha-ah-Bz4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ve5-94-hiV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Scores" image="scores.png" id="dEk-EV-Qxn"/>
                     <connections>
-                        <outlet property="cardScoresDisplay" destination="6ha-ah-Bz4" id="CLI-8a-QxT"/>
-                        <outlet property="setScoresDisplay" destination="DeF-DF-9RN" id="x4n-Up-EgL"/>
+                        <outlet property="scoresDisplay" destination="6ha-ah-Bz4" id="ckN-Nb-22K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Jz-dO-kT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,22 +288,24 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="wCh-4M-2RQ">
-                                <rect key="frame" x="223" y="41" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wCh-4M-2RQ">
                                 <connections>
                                     <action selector="toggleDealOnTab:" destination="lLS-Bb-IZC" eventType="valueChanged" id="yua-AZ-k8j"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Switching tabs deals new games:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R89-a2-Ioh">
-                                <rect key="frame" x="20" y="20" width="195" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Switching tabs deals new games:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="191" translatesAutoresizingMaskIntoConstraints="NO" id="R89-a2-Ioh">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wCh-4M-2RQ" firstAttribute="top" secondItem="avg-ep-vL9" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4GP-PR-Si3"/>
+                            <constraint firstItem="wCh-4M-2RQ" firstAttribute="leading" secondItem="R89-a2-Ioh" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="D4G-gB-O2s"/>
+                            <constraint firstItem="R89-a2-Ioh" firstAttribute="leading" secondItem="avg-ep-vL9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="i6p-mG-Uy1"/>
+                            <constraint firstItem="R89-a2-Ioh" firstAttribute="top" secondItem="avg-ep-vL9" secondAttribute="top" constant="20" symbolic="YES" type="default" id="pMv-Nb-SzR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="dO0-Du-fV0"/>
                     <connections>
@@ -346,6 +357,9 @@
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="PlayingCardCollectionViewCell" superclassName="UICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayingCardCollectionViewCell.h"/>
             <relationships>
@@ -358,8 +372,7 @@
         <class className="ScoresViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoresViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="cardScoresDisplay" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="setScoresDisplay" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="scoresDisplay" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="SetCardCollectionViewCell" superclassName="UICollectionViewCell">

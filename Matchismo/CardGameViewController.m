@@ -58,7 +58,7 @@
 	NSString *propertyType = properties[@"Type"];
 	
 	if ([propertyType isEqualToString:@"Blank"]) {
-		self.resultsLabel.text = @"";
+		self.resultsLabel.text = @" ";
 		return;
 	}
 	

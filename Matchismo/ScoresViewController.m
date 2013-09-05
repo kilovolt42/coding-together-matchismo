@@ -12,15 +12,14 @@
 #import "SetCardDeck.h"
 
 @interface ScoresViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *cardScoresDisplay;
-@property (weak, nonatomic) IBOutlet UITextView *setScoresDisplay;
+@property (weak, nonatomic) IBOutlet UITextView *scoresDisplay;
 @property (nonatomic) SEL sortSelector;
 @end
 
 @implementation ScoresViewController
 
 - (void)updateUI {
-	NSString *displayText = @"";
+	NSString *displayText = @"Playing Card Games:\n";
 	int rank = 1;
 	
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -31,15 +30,14 @@
 		displayText = [displayText stringByAppendingFormat:@"%d. Score: %d (%@, %0g sec)\n", rank++,  result.score, [dateFormatter stringFromDate:result.end], round(result.duration)];
 	}
 	
-	self.cardScoresDisplay.text = displayText;
-	displayText = @"";
+	displayText = [displayText stringByAppendingString:@"\nSet Card Games:\n"];
 	rank = 1;
 	
 	for (GameResult *result in [[GameResult gameResultsForGameTypeKey:[SetCardDeck description]] sortedArrayUsingSelector:self.sortSelector]) {
 		displayText = [displayText stringByAppendingFormat:@"%d. Score: %d (%@, %0g sec)\n", rank++, result.score, [dateFormatter stringFromDate:result.end], round(result.duration)];
 	}
 	
-	self.setScoresDisplay.text = displayText;
+	self.scoresDisplay.text = displayText;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
